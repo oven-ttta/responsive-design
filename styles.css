@@ -1,0 +1,57 @@
+* {
+    margin: 0; /* ลบค่า margin เริ่มต้น [cite: 758, 772] */
+    padding: 0; /* ลบค่า padding เริ่มต้น [cite: 759, 772] */
+    box-sizing: border-box; /* กำหนดให้เวลาคำนวณ width/height รวม padding เข้าไปด้วย [cite: 760, 772] */
+}
+
+/* ขั้นตอนที่ 5: กำหนดโครงสร้างหลัก (Display Flex) [cite: 801] */
+.page {
+    display: flex; /* [cite: 801] */
+    flex-wrap: wrap; /* [cite: 801] */
+}
+
+/* รูปแบบเริ่มต้นสำหรับทุก Section (Mobile First) [cite: 801] */
+.section {
+    width: 100%; /* ในโหมดมือถือทุก Section จะเต็มความกว้าง [cite: 801] */
+    height: 300px; /* [cite: 801] */
+    display: flex; /* [cite: 801] */
+    justify-content: center; /* [cite: 801] */
+    align-items: center; /* [cite: 801] */
+}
+
+/* กำหนดสีและขนาดเฉพาะของแต่ละ Section [cite: 801] */
+.menu {
+    background-color: #5995DA; /* [cite: 801] */
+    height: 80px; /* [cite: 801] */
+}
+
+.header {
+    background-color: #EAEDF0; /* [cite: 801] */
+}
+
+.content {
+    background-color: #fff;
+    height: 600px; /* [cite: 801] */
+}
+
+.sign-up {
+    background-color: #D6E9FE; /* [cite: 801] */
+}
+
+.feature-1 {
+    background-color: #F09A9D; /* [cite: 801] */
+}
+
+.feature-2 {
+    background-color: #F5CF8E; /* [cite: 801] */
+}
+
+.feature-3 {
+    background-color: #C8C6FA; /* [cite: 801] */
+}
+
+/* ให้รูปภาพปรับขนาดตามขนาดส่วน */
+.section img {
+    max-width: 100%;
+    max-height: 100%;
+}
